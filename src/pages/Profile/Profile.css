@@ -19,6 +19,7 @@ margin: 0 auto;
 width: 100%;
 height: 8rem;
 }
+
 .user-bio{
 padding: 1rem;
 font-size: 1rem;
@@ -27,6 +28,7 @@ border-radius: 10px;
 }
 
 textarea{
+  font-size: 1.4rem;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -116,12 +118,14 @@ input::file-selector-button{
   max-width: 25rem;
   width: 100%;  /* Full width on small screens */
   margin-bottom: 20px;
+  
 }
 
 .inputs-container {
   display: flex;
   flex-direction: column;  /* Set as column initially for mobile view */
   align-items: center;
+  
   justify-content: space-between;
   margin-top: 20px;
   width: 80%;  /* Full width on small screens */
@@ -132,6 +136,7 @@ input::file-selector-button{
 
 .profile-input-field input {
   flex-grow: 1;
+  font-size: 1.4rem;
 }
 
 
@@ -158,16 +163,20 @@ input[type=date] {
 }
 
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .profile-input-field {
     width: 45%;  /* Adjust to your liking */
   }
+
+  
 
   .inputs-container {
     flex-direction: row;  /* Change to row for larger screens */
     flex-wrap: wrap;
     width: 50%;  /* Adjust to your liking */
   }
+
+
 }
 .save-changes-button {
   width: 150px;

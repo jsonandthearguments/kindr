@@ -28,7 +28,7 @@ const FAQPage = () => {
     },
     {
       question: "How do you keep my information safe?",
-      answer: `Your information will be safely stored on our database and will not be shared with any third parties. We will only use your information to contact you about your tasks and to send you updates about the site. We do not have access to your password and will never ask you to share it with us. Your contact information will only be shared with the volunteer who has accepted your task, and vice versa,  so that you can arrange a time to meet and complete the task. You have the choice or sharing your phone number or e-mail address, or both, so you are always in charge of the information that you choose to share with other users.`,
+      answer: `Your information will be safely stored on our database and will not be shared with any third parties. We will only use your information to contact you about your tasks and to send you updates about the site. We do not have access to your password and will never ask you to share it with us. Your contact information will only be shared with the volunteer who has accepted your task, and vice versa, so that you can arrange a time to meet and complete the task. You have the choice or sharing your phone number or e-mail address, or both, so you are always in charge of the information that you choose to share with other users.`,
     },
     {
       question: "What about security?",

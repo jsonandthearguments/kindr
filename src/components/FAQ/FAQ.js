@@ -16,7 +16,7 @@ const FAQ = ({ faqs }) => {
           Use this page to learn more about Kindr, click the boxes to expand the
           answer:
         </p>
-        <br></br>
+        <br />
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -35,7 +35,13 @@ const FAQ = ({ faqs }) => {
               )}
             </div>
             {activeIndex === index && (
-              <div className={styles.answer}>{faq.answer}</div>
+              <div className={styles.answer}>
+                {faq.answer.split("\n").map((paragraph, idx) => (
+                  <p className={styles.answerParagraph} key={idx}>
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             )}
           </div>
         ))}

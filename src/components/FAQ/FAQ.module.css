@@ -1,15 +1,19 @@
 .FAQtitle {
-  padding: none;
+  padding: 0 0 0 2%;
   text-align: left;
   padding-top: 3%;
+  padding-bottom: 3%;
   margin-left: 4%;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .faqContainer {
   width: 60%;
   text-align: left;
   margin-left: 2%;
+  
+  
 }
 
 .faqItem {
@@ -17,8 +21,9 @@
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
-  box-shadow: 3px 5px 10px rgba(159, 180, 233, 0.2);
+  box-shadow: 3px 5px 10px rgba(159, 180, 233, 0.5);
   transition: background 0.3s;
+  
 }
 
 .faqItem:hover .question {
@@ -26,61 +31,80 @@
   color: #000000;
 }
 
-/* .faqItem:active .question {
-  background: #01bbe4;
-  color: #fff;
-} */
-
 .faqItem .question {
   font-weight: 600;
   padding: 1.5rem;
-  font-size: 1.8rem; /* Adjust the font size for mobile */
+  font-size: 1.8rem; /* Adjust the font size for desktop */
 }
 
-.faqItem .answer {
+.faqItem .answer > div.answer-content {
   padding: 10px;
-  /* font-weight: bold; Add font-weight property to make the text bold */
-  font-size: 1.5rem; /* Adjust the font size for mobile */
+  font-weight: 500;
+  font-size: 1.8rem; /* Adjust the font size for desktop */
   display: none; /* Hide the answer by default */
-  
 }
 
-.faqItem.active .answer {
+.answerParagraph {
+  font-size: 1.8rem; /* Adjust the font size for desktop */
+  margin-bottom: 10px; /* Add spacing between paragraphs */
+  padding: 0.5%;
+}
+
+.faqItem.active .answer > div.answer-content {
   display: block; /* Show the answer when the item is active */
 }
 
 /* Add the arrow icon */
 .arrow {
-  
   display: flex;
-    float: right;
+  float: right;
 }
 
 .arrowUp {
   display: flex;
-    float: right;
+  float: right;
 }
 
 .arrowDown {
   display: flex;
-    float: right;
+  float: right;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  .FAQtitle {
+    padding: 0 0 0 2%;
+    text-align: left;
+    padding-top: 3%;
+    margin-left: 4%;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
   .faqItem .question {
-    font-size: 1.3rem; /* Increase the font size for desktop */
-    margin-bottom: 5px; /* Add margin-bottom for desktop */
+    font-size: 1.3rem; /* Adjust the font size for mobile */
+    margin-bottom: 5px; /* Add margin-bottom for mobile */
     text-align: left;
     min-width: 250px;
   }
 
   .faqContainer {
-    width: 60%;
-    text-align: left;
-    min-width: 350px;
+    display: block;
+    margin: 0 auto;
+    width: 90%; /* Adjust this as necessary */
   }
-  .faqItem .answer {
-    font-size: 1rem; /* Increase the font size for desktop */
+
+
+  @media only screen and (max-width: 900px) {
+    .answerParagraph {
+      font-size: 1.3rem; /* Adjust the font size for mobile */
+      font-weight: 500;
+      padding: 1%;
+    }
+  }
+
+  .faqItem .answer > div.answer-content {
+    font-size: 1.3rem; /* Adjust the font size for mobile */
+    font-weight: 400;
     text-align: left;
   }
   h2 {
@@ -88,4 +112,3 @@
     margin-left: 2%;
   }
 }
-
